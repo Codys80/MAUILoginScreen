@@ -12,8 +12,7 @@
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
+            />
             <Label
                 x:Name="Notifications"
                 Text="Zaloguj się"
@@ -53,6 +52,33 @@
                 Clicked="OnLoginClicked"
                 HorizontalOptions="Fill"
                 TextColor="Black"/>
+            <Label
+                x:Name="AlternativeLogins"
+                Text="lub Zaloguj się przez"
+                TextColor="DimGray"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout
+                BackgroundColor="White"
+                Padding="30,0"
+                HorizontalOptions="Center"
+                Spacing="25">
+                <Image
+                    
+                    Source="dotnet_bot.png"
+                    HeightRequest="30"
+                    Aspect="AspectFit"
+                    />
+                <Image
+                Source="dotnet_bot.png"
+                HeightRequest="30"
+                Aspect="AspectFit"
+                />
+                <Image
+                Source="dotnet_bot.png"
+                HeightRequest="30"
+                Aspect="AspectFit"
+                />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

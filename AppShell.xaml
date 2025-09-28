@@ -8,7 +8,7 @@
     Title="LoginWindow">
 
     <ShellContent
-        Title="Home"
+        Title="Autor: 00000000"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

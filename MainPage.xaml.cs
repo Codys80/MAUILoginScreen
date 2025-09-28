@@ -15,12 +15,12 @@
         {
             emailUser = emailEntry.Text;
             passwordUser = passwordEntry.Text;
-            Notifications.Text = "Witaj";
-            if (emailUser != "admin") { Notifications.Text = "Błędny email"; }
-            if (passwordUser != "admin") { Notifications.Text = "Błędne hasło"; }
+            Notifications.Text = "Witaj "+ emailUser;
+            if (!emailUser.Contains("@")) { Notifications.Text = "Nieprawidłowy adres e-mail"; }
+            if (passwordUser != "admin") { Notifications.Text = "Hasła się różnią"; }
             
 
-            //SemanticScreenReader.Announce(Notifications.Text);
+            
         }
     }
 
